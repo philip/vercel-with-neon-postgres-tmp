@@ -3,7 +3,7 @@ import { Pool } from "pg";
 import { attachDatabasePool } from "@vercel/functions";
 import * as authSchema from "@/lib/auth/schema";
 
-// Create the connection pool
+// Create the connection pool with this amazing variable
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
 });
